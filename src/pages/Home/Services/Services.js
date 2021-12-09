@@ -1,22 +1,26 @@
 import React from 'react'
-import ServiceCard from '../../../components/ServiceCards/ServiceCard'
 import './services.scss'
+import Fade from 'react-reveal'
+import ServiceCard from '../../../components/ServiceCards/ServiceCard'
 import { data } from '../../../components/ServiceCards/data'
 const Services = () => {
     return (
-        <div className='services'>
+        <div className='services' id="services">
             <div className="servicesHeader">
-                <h3>Our Services</h3>
-                <p>It looks perfect on all major browsers, tablets and phones. The kind of product you’re looking for. Phasellus lacus nibh, ullamcorper in pulvinar semper, mollis sed turpis.s</p>
+                <Fade bottom>
+                    <h3>Our Services</h3>
+                    <p>It looks perfect on all major browsers, tablets and phones. The kind of product you’re looking for. Phasellus lacus nibh, ullamcorper in pulvinar semper, mollis sed turpis.s</p>
+                </Fade>
             </div>
-            <div className="serviceCards">
-                {
-                    data.map(item=>(
-
-                        <ServiceCard key={item.id}  item={item}/>
-                    ))
-                }
-            </div>
+            <Fade bottom>
+                <div className="serviceCards">
+                    {
+                        data.map(item => (
+                            <ServiceCard key={item.id} item={item} />
+                        ))
+                    }
+                </div>
+            </Fade>
         </div>
     )
 }

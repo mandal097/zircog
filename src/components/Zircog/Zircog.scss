@@ -1,0 +1,26 @@
+.landingPage_top {
+  display: flex;
+  height: 0rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .landingPage-topLeft {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-left: 1rem;
+    }
+  }
+  .landingPage-topRight {
+    .span {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      text-decoration: underline;
+      cursor: pointer;
+      color: black;
+    }
+  }
+}

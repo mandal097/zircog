@@ -10,9 +10,9 @@ import {
     BehanceOutlined ,
     GitlabOutlined 
 } from '@ant-design/icons'
-const Header = () => {
+const Header = ({Bg}) => {
     return (
-        <div className="header">
+        <div className="header" style={{backgroundColor:`${Bg}`}}>
             <div className="wrapper">
                 <div className="icons">
                     <FacebookFilled className="icon" />

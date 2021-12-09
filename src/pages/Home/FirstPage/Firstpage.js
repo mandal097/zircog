@@ -1,33 +1,31 @@
-import React, { useEffect } from 'react'
-import Header from '../../../components/Header/Header'
+import React from 'react'
 import './firstpage.scss'
-import {FormOutlined } from '@ant-design/icons'
-import 'aos/dist/aos.css'
-import Aos from 'aos'
+import Fade from 'react-reveal'
+import Header from '../../../components/Header/Header'
+import { FormOutlined } from '@ant-design/icons'
+import { NavLink } from 'react-router-dom'
+import Zircog from '../../../components/Zircog/Zircog'
 const Firstpage = () => {
-    useEffect(()=>{
-        Aos.init({duration:600})
-    })
     return (
         <div className="landingPage">
             <Header />
             <div className="landingPage_wrapper">
                 <div className="firstPage_content">
-                    <div className="landingPage_top">
-                        <div className="landingPage-topLeft">
-                            <img src="	https://zircog.com/wp-content/uploads/2018/10/Logo-4.png" alt="" />
-                            <h3>Zircog Technologies</h3>
-                        </div>
-                        <div className="landingPage-topRight">
-                            <span>home</span>
-                        </div>
-                    </div>
+                   <Zircog/>
                     <div className="landingPage_bottom">
-                        <h1 data-aos="fade-up">Perfectionist at Every Level</h1>
-                        <p data-aos="fade-up"> Perfection is a state, variously, of completeness, flawlessness, or supreme excellence. The term is used to designate a range of diverse, if often kindred, concepts. These have historically been addressed in a number of discrete disciplines.</p>
-                        <div data-aos="fade-up" className="landingPageButton">
-                            <button className="landingPageButton1" ><FormOutlined/> Free enquiry</button>
-                            <button className="landingPageButton2" >Services</button>
+                        <Fade bottom>
+                            <h1 >Perfectionist at Every Level</h1>
+                            <p > Perfection is a state, variously, of completeness, flawlessness, or supreme excellence. The term is used to designate a range of diverse, if often kindred, concepts. These have historically been addressed in a number of discrete disciplines.</p>
+                        </Fade>
+                        <div className="landingPageButton">
+                            <Fade bottom>
+                                <NavLink to="contactUs">
+                                    <button className="landingPageButton1" ><FormOutlined /> Free enquiry</button>
+                                </NavLink>
+                            </Fade>
+                            <Fade bottom>
+                                <button className="landingPageButton2" ><a href="#services"Services>services</a></button>
+                            </Fade>
                         </div>
                     </div>
                 </div>

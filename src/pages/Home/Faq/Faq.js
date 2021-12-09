@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './faq.scss'
+import Fade from 'react-reveal'
 const Faq = () => {
     const [show, setShow] = useState(false)
 
@@ -19,8 +20,10 @@ const Faq = () => {
     return (
         <div className="faq">
             <div className="faq_wrapper">
-                <h1>FAQs</h1>
-                <p>Frequently asked questions or Questions and Answers are listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic. The format is commonly used on email mailing lists and other online forums, where certain common questions tend to recur.</p>
+                <Fade bottom>
+                    <h1>FAQs</h1>
+                    <p>Frequently asked questions or Questions and Answers are listed questions and answers, all supposed to be commonly asked in some context, and pertaining to a particular topic. The format is commonly used on email mailing lists and other online forums, where certain common questions tend to recur.</p>
+                </Fade>
                 <div className="dropdowns_container">
                     <div className="details">
                         <div className="questions">What is Rara Corporate? <span onClick={handleClick}></span></div>

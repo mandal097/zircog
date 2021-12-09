@@ -19,29 +19,6 @@
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: wrap;
-      .landingPage_top {
-        display: flex;
-        height: 0rem;
-        align-items: center;
-        justify-content: space-between;
-        .landingPage-topLeft {
-          display: flex;
-          align-items: center;
-          h3 {
-            font-size: 1.3rem;
-            font-weight: bold;
-            margin-left: 1rem;
-          }
-        }
-        .landingPage-topRight {
-          span {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
-      }
       .landingPage_bottom {
         height: 50vh;
         display: flex;
@@ -88,6 +65,9 @@
           }
           .landingPageButton2 {
             color: #1f3d83;
+            a{
+              text-decoration: none;
+            }
           }
         }
       }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './cstudies.scss'
+import Fade from 'react-reveal'
 import { data } from '../../../dummydata/data'
 const CStudies = () => {
 
@@ -28,29 +29,41 @@ const CStudies = () => {
     return (
         <div className="case_studies">
             <div className="c_wrapper">
-                <div className="c_top">
-                    <h1>Our Case Studies</h1>
-                    <p>It looks perfect on all major browsers, tablets and phones. The kind of product you are looking for.</p>
-                    <div className="c_top_bottom">
-                        <span onClick={handleall} >all</span>
-                        <span onClick={handleCreative} >creative</span>
-                        <span onClick={handlePhotography} >photography</span>
-                        <span onClick={handleSolutions} >web solutions</span>
+                <Fade bottom>
+                    <div className="c_top">
+                        <h1>Our Case Studies</h1>
+                        <p>It looks perfect on all major browsers, tablets and phones. The kind of product you are looking for.</p>
+                        <div className="c_top_bottom">
+                            <Fade bottom>
+                                <span onClick={handleall} >all</span>
+                            </Fade>
+                            <Fade bottom>
+                                <span onClick={handleCreative} >creative</span>
+                            </Fade>
+                            <Fade bottom>
+                                <span onClick={handlePhotography} >photography</span>
+                            </Fade>
+                            <Fade bottom>
+                                <span onClick={handleSolutions} >web solutions</span>
+                            </Fade>
+                        </div>
                     </div>
-                </div>
-                <div className="c_images">
-                    {
-                        img.map((i) => (
-                            <div>
-                                <img items key={i.id} src={i.img} alt="" />
-                                <div className="absolute">
-                                    <h3>MIA Poster</h3>
-                                    <span className="absolute_">#{i.cat}</span>
+                </Fade>
+                <Fade bottom>
+                    <div className="c_images">
+                        {
+                            img.map((i) => (
+                                <div>
+                                    <img items key={i.id} src={i.img} alt="" />
+                                    <div className="absolute">
+                                        <h3>MIA Poster</h3>
+                                        <span className="absolute_">#{i.cat}</span>
+                                    </div>
                                 </div>
-                            </div>
-                        ))
-                    }
-                </div>
+                            ))
+                        }
+                    </div>
+                </Fade>
             </div>
         </div>
     )
