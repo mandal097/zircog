@@ -1,0 +1,53 @@
+.header {
+  width: 100%;
+  border-bottom: 0.1rem solid grey;
+  height: 50px;
+  .wrapper {
+    height: 100%;
+    width: 72rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .icons {
+      font-size: 1rem;
+      .icon {
+        margin-right: 1rem;
+        &:hover {
+          color: lightgrey;
+        }
+      }
+    }
+    .enquiryBtn {
+      height: 100%;
+      button {
+        background-color: #1f3d83;
+        color: white;
+        border: none;
+        width: 10rem;
+        height: 100%;
+        padding: 0.1rem 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        .btnIcon {
+          margin-right: 0.4rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:950px) {
+ .header{
+   width: 100%;
+   .wrapper{
+     width: 100%;
+   }
+ } 
+}

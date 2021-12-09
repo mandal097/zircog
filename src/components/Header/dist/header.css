@@ -1,0 +1,51 @@
+.header {
+  width: 100%;
+  border-bottom: 0.1rem solid grey;
+  height: 50px;
+}
+.header .wrapper {
+  height: 100%;
+  width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .wrapper .icons {
+  font-size: 1rem;
+}
+.header .wrapper .icons .icon {
+  margin-right: 1rem;
+}
+.header .wrapper .icons .icon:hover {
+  color: lightgrey;
+}
+.header .wrapper .enquiryBtn {
+  height: 100%;
+}
+.header .wrapper .enquiryBtn button {
+  background-color: #1f3d83;
+  color: white;
+  border: none;
+  width: 10rem;
+  height: 100%;
+  padding: 0.1rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.header .wrapper .enquiryBtn button .btnIcon {
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 950px) {
+  .header {
+    width: 100%;
+  }
+  .header .wrapper {
+    width: 100%;
+  }
+}

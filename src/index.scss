@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Baloo+2:wght@400;500;600&family=Inconsolata:wght@200;300;500;600;700;800;900&family=Londrina+Outline&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400&family=Tourney:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+body {
+  color: white;
+  font-size: 62.5%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media (max-width:1300px) {
+  body,html{
+    font-size: 100.5%;
+  }
+}
+@media (max-width:950px) {
+  body,html{
+    font-size: 62.5%;
+  }
+}
+@media (max-width:730px) {
+  body,html{
+    font-size: 59.5%;
+  }
+}

@@ -1,0 +1,130 @@
+.landingPage {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://zircog.com/wp-content/uploads/2021/02/cropped-building-2559580_1920-1-1536x624.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  //   position: relative;
+  z-index: -1111;
+  .landingPage_wrapper {
+    width: 72rem;
+    margin: 0 auto;
+    .firstPage_content {
+      width: inherit;
+      position: absolute;
+      height: calc(100vh - 50px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .landingPage_top {
+        display: flex;
+        height: 0rem;
+        align-items: center;
+        justify-content: space-between;
+        .landingPage-topLeft {
+          display: flex;
+          align-items: center;
+          h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-left: 1rem;
+          }
+        }
+        .landingPage-topRight {
+          span {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+      .landingPage_bottom {
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        h1 {
+          font-size: 3.2rem;
+          text-align: center;
+        }
+        p {
+          font-size: 1.2rem;
+          text-align: center;
+          line-height: 1;
+          font-weight: 300;
+          letter-spacing: 0.1px;
+          word-spacing: 0.4px;
+        }
+        .landingPageButton {
+          margin: 0 auto;
+          display: flex;
+          .landingPageButton1,
+          .landingPageButton2 {
+            width: 15rem;
+            height: 4rem;
+            font-size: 0.9rem;
+            font-weight: 100;
+            border-radius: 0.4rem;
+            border: none;
+            margin: 0px 1rem;
+            text-transform: uppercase;
+            transition: all 300ms;
+            font-weight: 400;
+            letter-spacing: 2px;
+            &:hover {
+              background-color: teal;
+              color: white;
+            }
+          }
+          .landingPageButton1 {
+            background-color: #1f3d83;
+            color: white;
+          }
+          .landingPageButton2 {
+            color: #1f3d83;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .landingPage {
+    height: 100vh;
+    width: 100%;
+    .landingPage_wrapper {
+      height: auto;
+      width: 100%;
+      .landingPage_bottom {
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .landingPage {
+    width: 100%;
+    .landingPage_top {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 410px) {
+  .landingPageButton {
+    .landingPageButton1 {
+      margin-bottom: 1rem;
+      font-size: 10px;
+    }
+  }
+}
