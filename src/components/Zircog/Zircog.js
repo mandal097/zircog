@@ -10,7 +10,7 @@ const Zircog = () => {
                     <img src="	https://zircog.com/wp-content/uploads/2018/10/Logo-4.png" alt="" />
                 </Fade>
                 <Fade bottom>
-                    <h3>Zircog Technologies</h3>
+                    <h3>Mandal's Tech</h3>
                 </Fade>
             </div>
             <div className="landingPage-topRight">
