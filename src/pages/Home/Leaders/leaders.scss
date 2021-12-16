@@ -1,5 +1,5 @@
 .leaders {
-  margin: 2rem;
+  // margin: 2rem;
   color: black;
   width: 100%;
   border: 1px solid lightgrey;
@@ -21,7 +21,17 @@
     .leaders_card_container {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .leaders {
+    .leaders_wrapper {
+      width: 100%;
+      margin: 0 auto;
     }
   }
 }

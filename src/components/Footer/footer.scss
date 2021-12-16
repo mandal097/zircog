@@ -77,12 +77,32 @@
     .footer_footer {
       border-top: 1px solid grey;
       width: 100%;
-      margin-top: auto;
+      margin-top: 2rem;
       p {
         text-align: center;
         font-size: 1.1rem;
         padding: 1rem 0;
       }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer {
+    .footer_wrapper {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    .footer_wrapper {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      justify-content: center;
     }
   }
 }
