@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.scss'
+import {NavLink} from 'react-router-dom'
 import {
     FacebookFilled,
     FormOutlined,
@@ -21,6 +22,11 @@ const Header = ({Bg}) => {
                     <InstagramOutlined className="icon" />
                     <GoogleCircleFilled className="icon" />
                     <BehanceOutlined className="icon" />
+                    <GitlabOutlined className="icon" />
+                    <NavLink to='/login'>
+
+                    <GitlabOutlined className="icon"  />
+                    </NavLink>
                     <GitlabOutlined className="icon" />
                 </div>
                 <div className="enquiryBtn">
