@@ -13,22 +13,34 @@ import Banner from '../../components/BannerPremium/Banner'
 import Footer from '../../components/Footer/Footer'
 import Faq from './Faq/Faq'
 import Logo from '../../components/Logos/Logo'
+// import { useSelector } from 'react-redux'
+// import Login from '../Login/Login'
 const Home = () => {
+
+    // const user = useSelector(state => state.user.user)
     return (
         <div className="home">
-            <Firstpage/>
-            <Services/>
-            <About/>
-            <Advantages/>
-            <Leaders/>
-            <Clients/>
-            <Stats/>
-            <CStudies/>
-            <Blogs/>
-            <Banner/>
-            <Faq/>
-            <Logo/>
-            <Footer/>
+            {/* {
+                user ? (
+                    <> */}
+                        <Firstpage />
+                        <Services />
+                        <About />
+                        <Advantages />
+                        <Leaders />
+                        <Clients />
+                        <Stats />
+                        <CStudies />
+                        <Blogs />
+                        <Banner />
+                        <Faq />
+                        <Logo />
+                        <Footer />
+                    {/* </>
+                ) : (
+                    <Login />
+                )
+            } */}
         </div>
     )
 }

@@ -11,10 +11,38 @@
     justify-content: space-between;
     .icons {
       font-size: 1rem;
+      display: flex;
+      align-items: center;
       .icon {
         margin-right: 1rem;
         &:hover {
           color: lightgrey;
+        }
+      }
+      .user_profile {
+        cursor: pointer;
+        position: relative;
+        &:hover {
+          .gotoProfile {
+            display: flex;
+          }
+        }
+        .gotoProfile {
+          position: absolute;
+          top: 2rem;
+          height: 2.3rem;
+          width: 100%;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 3px;
+          border-radius: 5px;
+          font-size: 0.8rem;
+          cursor: pointer;
+        }
+        .profile {
+          cursor: pointer;
         }
       }
     }
@@ -43,12 +71,12 @@
   }
 }
 
-@media (max-width:950px) {
- .header{
-   width: 95%;
-   margin: 0 auto;
-   .wrapper{
-     width: 100%;
-   }
- } 
+@media (max-width: 950px) {
+  .header {
+    width: 95%;
+    margin: 0 auto;
+    .wrapper {
+      width: 100%;
+    }
+  }
 }
