@@ -1,0 +1,67 @@
+.update_user {
+  height: 100vh;
+  width: 100%;
+  background-color: #1f3d83;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .update_user_wrapper {
+    height: 90vh;
+    width: 90%;
+    // background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding: 1rem;
+    .update_user_left {
+      background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 80%;
+      width: 35%;
+      input{
+          width: 90%;
+          font-size: 1.1rem;
+          padding: 0.1rem;
+          outline: none;
+      }
+    }
+    .update_user_right {
+      background-color: green;
+      align-items: center;
+      height: 80%;
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      textarea {
+        width: 90%;
+        resize: none;
+        height: 60%;
+        outline: none;
+        font-size: 2rem;
+        padding: 0.5rem;
+      }
+      button{
+          width: 90%;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          background-color:#1f3d83 ;
+          border: 1px solid white;
+          color: white;
+          font-weight: bold;
+          padding: 0.2rem;
+          cursor: pointer;
+          border-radius: 10px;
+          transition: all 300ms linear;
+          &:hover{
+              background-color:skyblue;
+              color: blue;
+          }
+      }
+    }
+  }
+}

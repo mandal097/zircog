@@ -34,7 +34,7 @@ const Header = ({ Bg }) => {
                     {
                         user ? (
                             <div style={{ marginLeft: '2rem' }} className='user_profile'> logged in as : 
-                               <NavLink to={`/profile/${user.email}`} style={{ color: 'white' }}>
+                               <NavLink to={`/profile/${user._id}`} style={{ color: 'white' }}>
                                 <span >{user.name}
                                 </span>
                             </NavLink>
