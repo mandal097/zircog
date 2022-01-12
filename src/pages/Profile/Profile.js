@@ -1,19 +1,37 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+// import { useSelector } from 'react-redux'
 import './profile.scss'
+import { axioss } from '../../axios'
+import { useLocation } from 'react-router-dom'
 const Profile = () => {
-    const user = useSelector(state => state.user.currentUser)
-    console.log(user);
+    // const user = useSelector(state => state.user.currentUser)
+    // console.log(user);
+    const path = useLocation()
+    const id = path.pathname.split("/")[2]
+    const [user, setUser] = useState([]);
+    useEffect(() => {
+        const fetchdata = async () => {
+            const response = await axioss.get(`/user/${id}`)
+            // .then(response => response.data)
+            //     .then((data) => {
+            //         setUser(data)
+            //         console.log(user)
+            //     })
+            const orgData = response.data
+            setUser(orgData)
+        }
+        fetchdata()
+    }, [])
     return (
         <div className='profile_page'>
             <div className="profile_wrapper">
                 <div className="profile_wrapper_left">
-                    <img className="profile_img" src={user.img?user.img:"https://cdn-icons-png.flaticon.com/128/709/709722.png"} alt="" />
+                    <img className="profile_img" src={user.img ?`/uploads/${user.img}`:"https://cdn-icons-png.flaticon.com/128/709/709722.png"} alt="" />
                     <span className='name'>{user.name}</span>
                     <span>{user.email}</span>
-                    {/* <div className="profile_update">
+                    <div className="profile_update">
                         Update profile
-                    </div> */}
+                    </div>
                 </div>
                 <div className="profile_wrapper_right">
                     <div className="profile_wrapper_right_top">
